@@ -1,0 +1,50 @@
+.horizontal-menu {
+    background-color: #4e54c8;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .horizontal-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .horizontal-menu > ul > li {
+    position: relative;
+    display: inline-block;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .horizontal-menu > ul > li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .horizontal-menu > ul > li:hover .submenu {
+    display: block; /* Show submenu on hover */
+  }
+  
+  .submenu > li {
+    padding: 10px 15px;
+  }
+  
+  .submenu > li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .submenu > li a:hover {
+    background: #f0f0f0;
+  }
+  
